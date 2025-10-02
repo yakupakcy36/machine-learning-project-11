@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+  <rect width="880" height="440" rx="12" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <text x="32" y="42" fill="#f8fafc" font-family="Segoe UI, Inter, sans-serif" font-size="20" font-weight="700">Meteorological Precipitation &amp; Rainfall Forecaster — 5-Fold CV</text>
+  <text x="32" y="66" fill="#94a3b8" font-family="Segoe UI, Inter, sans-serif" font-size="13">Synoptic Weather Station Telemetry (N = 1,095 Days, 7 Atmospheric Predictors)</text>
+  <rect x="32" y="84" width="12" height="12" rx="3" fill="#38bdf8"/>
+  <text x="50" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">ROC-AUC</text>
+  <rect x="232" y="84" width="12" height="12" rx="3" fill="#34d399"/>
+  <text x="250" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">F1-Score</text>
+  <rect x="432" y="84" width="12" height="12" rx="3" fill="#a78bfa"/>
+  <text x="450" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">Forecast Accuracy</text>
+  <rect x="632" y="84" width="12" height="12" rx="3" fill="#fbbf24"/>
+  <text x="650" y="94" fill="#cbd5e1" font-family="Segoe UI, Inter, sans-serif" font-size="12" font-weight="600">Precipitation Recall</text>
+  <line x1="290.0" y1="115" x2="290.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="290.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.00</text>
+  <line x1="420.0" y1="115" x2="420.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="420.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.25</text>
+  <line x1="550.0" y1="115" x2="550.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="550.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.50</text>
+  <line x1="680.0" y1="115" x2="680.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="680.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">0.75</text>
+  <line x1="810.0" y1="115" x2="810.0" y2="397" stroke="#334155" stroke-dasharray="4,4" stroke-width="1"/>
+  <text x="810.0" y="417" fill="#64748b" font-family="Segoe UI, Inter, sans-serif" font-size="11" text-anchor="middle">1.00</text>
+  <text x="276" y="157" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">HistGradientBoosting Forecaster</text>
+  <text x="276" y="175" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">Brier Score: 0.0518 | Prec: 0.9222</text>
+  <rect x="290" y="125" width="509.7" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="807.7" y="136" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9802</text>
+  <rect x="290" y="143" width="477.9" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="775.9" y="154" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9190</text>
+  <rect x="290" y="161" width="486.3" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="784.3" y="172" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9352</text>
+  <rect x="290" y="179" width="476.3" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="774.3" y="190" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9159</text>
+  <text x="276" y="251" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">Grid-Tuned Random Forest (200 Trees)</text>
+  <text x="276" y="269" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">Brier Score: 0.0530 | Prec: 0.9234</text>
+  <rect x="290" y="219" width="509.1" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="807.1" y="230" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9791</text>
+  <rect x="290" y="237" width="475.2" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="773.2" y="248" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9139</text>
+  <rect x="290" y="255" width="484.4" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="782.4" y="266" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9315</text>
+  <rect x="290" y="273" width="470.3" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="768.3" y="284" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9045</text>
+  <text x="276" y="345" fill="#f1f5f9" font-family="Segoe UI, Inter, sans-serif" font-size="12.5" font-weight="600" text-anchor="end">Regularized Logistic Regression</text>
+  <text x="276" y="363" fill="#64748b" font-family="Consolas, monospace" font-size="11" text-anchor="end">Brier Score: 0.0830 | Prec: 0.8555</text>
+  <rect x="290" y="313" width="495.8" height="14" rx="3" fill="#38bdf8" opacity="0.92"/>
+  <text x="793.8" y="324" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.9535</text>
+  <rect x="290" y="331" width="442.8" height="14" rx="3" fill="#34d399" opacity="0.92"/>
+  <text x="740.8" y="342" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.8516</text>
+  <rect x="290" y="349" width="458.3" height="14" rx="3" fill="#a78bfa" opacity="0.92"/>
+  <text x="756.3" y="360" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.8813</text>
+  <rect x="290" y="367" width="440.8" height="14" rx="3" fill="#fbbf24" opacity="0.92"/>
+  <text x="738.8" y="378" fill="#e2e8f0" font-family="Consolas, monospace" font-size="11" font-weight="600">0.8477</text>
+</svg>

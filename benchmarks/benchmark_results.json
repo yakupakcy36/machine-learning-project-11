@@ -1,0 +1,46 @@
+{
+  "project": "Meteorological Precipitation & Rainfall Forecaster (ML Project 11)",
+  "dataset": "Synoptic Weather Station Telemetry (N=1095 Days, 7 Atmospheric Predictors)",
+  "validation_protocol": "5-Fold Stratified Cross-Validation",
+  "features": [
+    "pressure",
+    "dewpoint",
+    "humidity",
+    "cloud",
+    "sunshine",
+    "winddirection",
+    "windspeed"
+  ],
+  "results": [
+    {
+      "model": "HistGradientBoosting Forecaster",
+      "roc_auc": 0.9802,
+      "roc_auc_std": 0.0071,
+      "f1": 0.919,
+      "accuracy": 0.9352,
+      "precision": 0.9222,
+      "recall": 0.9159,
+      "brier_score": 0.0518
+    },
+    {
+      "model": "Grid-Tuned Random Forest (200 Trees)",
+      "roc_auc": 0.9791,
+      "roc_auc_std": 0.0089,
+      "f1": 0.9139,
+      "accuracy": 0.9315,
+      "precision": 0.9234,
+      "recall": 0.9045,
+      "brier_score": 0.053
+    },
+    {
+      "model": "Regularized Logistic Regression",
+      "roc_auc": 0.9535,
+      "roc_auc_std": 0.0176,
+      "f1": 0.8516,
+      "accuracy": 0.8813,
+      "precision": 0.8555,
+      "recall": 0.8477,
+      "brier_score": 0.083
+    }
+  ]
+}
